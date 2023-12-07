@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0" />
+    <meta name="description" content="Password Check" />
+    <meta name="author" content="Sadeg Akbarian" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>Password Check</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Check</h1>
+    </header>
+    <main>
+      <div class="input_div" id="input_div">
+        <form>
+          <label for="password_one">Type in the password</label>
+          <input type="password" class="password_one" id="password_one" />
+          <label for="password_two">Repeat the password</label>
+          <input type="password" class="password_two" id="password_two" />
+          <div class="error_div" id="error_div">
+            Please type in only letters and numbers!!!
+          </div>
+          <div
+            class="triangle error_triangle_one"
+            id="error_triangle_one"
+          ></div>
+          <div
+            class="triangle error_triangle_two"
+            id="error_triangle_two"
+          ></div>
+          <button id="password_button">Show Passwords</button>
+        </form>
+      </div>
+      <div class="requirement_div" id="requirement_div">
+        <p>
+          <span>Passwords are equal</span
+          ><span class="symbol" id="symbol_equal"></span>
+        </p>
+        <p>
+          <span>Lower Case Letters</span
+          ><span class="symbol" id="symbol_lower"></span>
+        </p>
+        <p>
+          <span>Upper Case Letters</span
+          ><span class="symbol" id="symbol_upper"></span>
+        </p>
+        <p>
+          <span>Contains Numbers</span
+          ><span class="symbol" id="symbol_numbers"></span>
+        </p>
+        <p>
+          <span>At least 10 characters long</span
+          ><span class="symbol" id="symbol_tenCharacters"></span>
+        </p>
+      </div>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

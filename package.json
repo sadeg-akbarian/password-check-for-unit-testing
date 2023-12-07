@@ -1,0 +1,16 @@
+{
+  "name": "password-check-for-unit-testing",
+  "version": "1.0.0",
+  "description": "I refactored my password check app with pure functions 😉",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@types/jest": "^29.5.11",
+    "jest": "^29.7.0"
+  }
+}
